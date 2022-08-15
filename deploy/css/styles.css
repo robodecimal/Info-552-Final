@@ -360,6 +360,10 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
 ul li {
   list-style: none;
 }
@@ -382,7 +386,7 @@ a {
 }
 @media (min-width: 1024px) {
   .hide-for-lg {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -391,6 +395,11 @@ a {
 ============= */
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
 }
 
 /* =============
@@ -427,9 +436,17 @@ textarea {
   padding: 16px;
   box-sizing: border-box;
 }
+@media (min-width: 1024px) {
+  #nav-container {
+    position: static;
+    height: inherit;
+    background-color: var(--lightBlue);
+    padding: 0;
+  }
+}
 #nav-container #close-btn {
   color: var(--cream);
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
   background-color: var(--cream);
   height: 50px;
   width: 50px;
@@ -450,23 +467,62 @@ textarea {
   align-items: center;
   height: 100%;
 }
+@media (min-width: 1024px) {
+  #nav-container nav {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #nav-container nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 #nav-container nav ul li {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   text-align: right;
+}
+@media (min-width: 1024px) {
+  #nav-container nav ul li {
+    margin-left: 32px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 #nav-container nav ul li a:link,
 #nav-container nav ul li a:visited {
   color: var(--cream);
   font-size: 1.25rem;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #nav-container nav ul li a:link,
+#nav-container nav ul li a:visited {
+    color: var(--blue);
+  }
 }
 #nav-container nav ul li a:link i,
 #nav-container nav ul li a:visited i {
   margin-right: 8px;
 }
-#nav-container nav ul #shop-btn a {
+#nav-container nav ul li a:link:hover, #nav-container nav ul li a:link:active,
+#nav-container nav ul li a:visited:hover,
+#nav-container nav ul li a:visited:active {
+  color: var(--cream);
+}
+#nav-container nav ul #shop-btn a:link,
+#nav-container nav ul #shop-btn a:visited {
   background-color: var(--red);
   padding: 8px 16px;
   border-radius: 5px;
+  color: var(--cream);
+  transition: 0.25s;
+}
+#nav-container nav ul #shop-btn a:link:hover, #nav-container nav ul #shop-btn a:link:active,
+#nav-container nav ul #shop-btn a:visited:hover,
+#nav-container nav ul #shop-btn a:visited:active {
+  background-color: var(--cream);
+  color: var(--red);
 }
 
 /* =============
@@ -477,6 +533,27 @@ header {
   display: grid;
   grid-template-columns: 50% auto;
   padding: 16px;
+}
+header button {
+  border: none;
+  background-color: transparent;
+}
+header aside div {
+  display: flex;
+  align-items: center;
+  color: var(--darkBlue);
+}
+header aside div img {
+  margin-right: 16px;
+}
+header aside div h1 {
+  font-family: "Corben", cursive;
+  font-weight: 400;
+}
+header aside div h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 header #burger-container {
   display: flex;

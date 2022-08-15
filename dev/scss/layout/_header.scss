@@ -6,8 +6,33 @@ header{
     display:  grid;
     grid-template-columns: 50% auto;
     padding: 16px;
-    aside{
 
+    button{
+        border: none;
+        background-color: transparent;
+    }
+
+    aside{
+        div{
+            display: flex;
+            align-items: center;
+            color: var(--darkBlue);
+
+            img{
+                margin-right: 16px;
+            }
+
+            h1{
+                font-family: 'Corben', cursive;
+                font-weight: 400;
+            }
+
+            h2{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: rem-calc(20);
+            }
+        }
     }
 
     #burger-container{
