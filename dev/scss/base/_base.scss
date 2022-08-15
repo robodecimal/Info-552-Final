@@ -3,3 +3,29 @@
 ============= */
 
 
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.show-for-md{
+    display: none;
+    
+    @include md{
+        display: block;
+    }
+}
+
+.hide-for-lg{
+    display: block;
+
+    @include lg{
+        display: none;
+    }
+}

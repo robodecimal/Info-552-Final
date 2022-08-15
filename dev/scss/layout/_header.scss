@@ -1,3 +1,27 @@
 /* =============
     Header
 ============= */
+header{
+    background-color: var(--lightBlue);
+    display:  grid;
+    grid-template-columns: 50% auto;
+    padding: 16px;
+    aside{
+
+    }
+
+    #burger-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        i{
+            color: var(--darkBlue);
+            // color: var(--lightBlue);
+        }
+    }
+
+    nav{
+
+    }
+}

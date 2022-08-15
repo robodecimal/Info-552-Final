@@ -1,3 +1,69 @@
 /* =============
     Navigation
 ============= */
+
+#nav-container {
+    height: 100vh;
+    background-color: var(--darkBlue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+
+    #close-btn {
+        color: var(--cream);
+        font-size: rem-calc(30);
+        background-color: var(--cream);
+
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+
+        .fa-duotone.fa-swap-opacity:before, .fa-duotone:after, .fa-swap-opacity .fa-duotone:before, .fa-swap-opacity .fad:before, .fad.fa-swap-opacity:before, .fad:after {
+            color: var(--red);
+            opacity: 1;
+        }
+    }
+
+    nav {
+
+        padding: 16px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+
+        ul {
+
+            li {
+                margin-bottom: 24px;
+                text-align: right;
+
+                a:link,
+                a:visited {
+                    color: var(--cream);
+                    font-size: rem-calc(20);
+
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            #shop-btn {
+
+                a {
+                    background-color: var(--red);
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
