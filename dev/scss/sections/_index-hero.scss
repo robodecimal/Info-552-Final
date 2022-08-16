@@ -8,9 +8,12 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    width: 100%;
     align-items: flex-end;
 
     >div{
+        width: 100%;
+
         #heart-container{
             display: flex;
             justify-content: center;
@@ -20,6 +23,8 @@
             background-color: rgba(0,0,0,.5);
             padding: 16px;
             margin-top: -16px;
+            width: 100%;
+            box-sizing: border-box;2
 
          
             h1{
