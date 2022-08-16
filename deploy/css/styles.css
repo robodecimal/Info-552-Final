@@ -408,6 +408,12 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
+.headline {
+  font-weight: 300;
+  font-size: 1.875rem;
+  margin-bottom: 16px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -703,4 +709,72 @@ header #burger-container i {
   font-size: 1.875rem;
   color: var(--blue);
   margin-left: 16px;
+}
+
+/* =============
+    Index About
+============= */
+#help {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". help .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #help {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #help {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #help {
+    grid-template-columns: auto 1200px auto;
+    padding: 64px 0;
+  }
+}
+#help > div {
+  grid-area: help;
+  box-sizing: border-box;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #help > div {
+    grid-template-columns: 50% auto;
+  }
+}
+#help > div #helped {
+  background-color: var(--cream);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#help > div #helped div img {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #help > div #helped div img {
+    width: 80%;
+  }
+}
+#help > div #goal {
+  background-color: var(--blue);
+  padding: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#help > div #goal div h1 {
+  color: var(--cream);
+}
+#help > div #goal div img {
+  width: 80%;
 }

@@ -1,0 +1,82 @@
+/* =============
+    Index About
+============= */
+
+#help {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". help .";
+    padding: 24px 0;
+
+
+    @include md{
+      
+        padding: 48px 0;
+    }
+
+    @include lg{
+       
+        padding: 56px 0;
+    }
+
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: help;
+        box-sizing: border-box;
+        display: grid;
+        gap: 16px;
+
+        @include md {
+
+            grid-template-columns: 50% auto;
+        }
+
+        #helped {
+            background-color: var(--cream);
+            padding: 16px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div{
+                img {
+                    width: 100%;
+    
+                    @include lg{
+                        width: 80%;
+                    }
+                }
+            }
+
+            
+        }
+
+        #goal {
+            background-color: var(--blue);
+            padding: 16px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+
+                h1 {
+                    color: var(--cream);
+                }
+
+                img {
+                    width: 80%;
+                }
+
+            }
+        }
+    }
+}
