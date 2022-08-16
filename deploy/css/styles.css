@@ -778,3 +778,71 @@ header #burger-container i {
 #help > div #goal div img {
   width: 80%;
 }
+
+/* =============
+    Index Gallery
+============= */
+#index-gallery {
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". gallery .";
+}
+@media (min-width: 768px) {
+  #index-gallery {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #index-gallery {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #index-gallery {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#index-gallery > div {
+  grid-area: gallery;
+}
+#index-gallery > div ul {
+  display: grid;
+  grid-template-rows: repeat(4, 400px);
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #index-gallery > div ul {
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(2, 400px);
+  }
+}
+@media (min-width: 1440px) {
+  #index-gallery > div ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+  }
+}
+#index-gallery > div ul li {
+  background-size: cover;
+  background-position: center;
+}
+#index-gallery > div ul li:nth-child(1) {
+  background-image: url("../img/gallery/index-gal-1.jpg");
+}
+#index-gallery > div ul li:nth-child(2) {
+  background-image: url("../img/gallery/index-gal-2.jpg");
+}
+#index-gallery > div ul li:nth-child(3) {
+  background-image: url("../img/gallery/index-gal-3.jpg");
+}
+#index-gallery > div ul li:nth-child(4) {
+  background-image: url("../img/gallery/index-gal-4.jpg");
+}
+#index-gallery > div ul a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid red;
+}

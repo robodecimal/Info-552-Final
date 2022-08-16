@@ -7,7 +7,7 @@
       "uuidString" : "451A1469-D6E6-4D70-91C5-115B5A5CB6D8"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34408",
   "files" : {
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -20,6 +20,58 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/gallery\/index-gal-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 102119,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/index-gal-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/index-gal-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 261333,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/index-gal-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/index-gal-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 123303,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/index-gal-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/index-gal-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 173993,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/index-gal-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/header\/logo.svg" : {
       "ft" : 2097152,
@@ -101,6 +153,14 @@
       "oAP" : "\/dev\/content\/index-about.html",
       "oF" : 0
     },
+    "\/dev\/content\/index-gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index-gallery.html",
+      "oF" : 0
+    },
     "\/dev\/content\/index-help.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -121,7 +181,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -328,6 +388,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_index-about.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_index-gallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_index-gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1297,7 +1372,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -1925,6 +2001,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,

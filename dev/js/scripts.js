@@ -37,3 +37,8 @@ closeBtn.addEventListener("click",function(){
      // slide the menu up
      gsap.to("#nav-container",{duration:0.25, y:-menuHeight - 100});
 })
+
+
+// Fancybox.bind("[data-fancybox]", {
+//     // Your options go here
+//   });

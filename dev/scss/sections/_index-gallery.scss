@@ -1,0 +1,73 @@
+/* =============
+    Index Gallery
+============= */
+#index-gallery {
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+
+    @include md {
+
+        padding: 48px 0;
+    }
+
+    @include lg {
+
+        padding: 56px 0;
+    }
+
+
+    @include xl {
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: gallery;
+
+        ul {
+            display: grid;
+            grid-template-rows: repeat(4, 400px);
+            gap: 16px;
+            
+            @include md{
+                grid-template-columns: 50% auto;
+                grid-template-rows: repeat(2, 400px);
+            }
+
+            @include xxl{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 300px);
+            }
+
+            li {
+                background-size: cover;
+                background-position: center;
+            }
+
+            li:nth-child(1) {
+                background-image: url("../img/gallery/index-gal-1.jpg");
+            }
+
+            li:nth-child(2) {
+                background-image: url("../img/gallery/index-gal-2.jpg");
+            }
+
+            li:nth-child(3) {
+                background-image: url("../img/gallery/index-gal-3.jpg");
+            }
+
+            li:nth-child(4) {
+                background-image: url("../img/gallery/index-gal-4.jpg");
+            }
+
+            a{
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                border: 1px solid red;
+            }
+        }
+    }
+}
