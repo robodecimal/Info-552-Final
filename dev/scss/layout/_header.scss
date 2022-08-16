@@ -7,6 +7,10 @@ header{
     grid-template-columns: 50% auto;
     padding: 16px;
 
+    @include lg{
+        grid-template-columns: 30% auto;
+    }
+
     button{
         border: none;
         background-color: transparent;
@@ -25,12 +29,13 @@ header{
             h1{
                 font-family: 'Corben', cursive;
                 font-weight: 400;
+                font-size: rem-calc(23);
             }
 
             h2{
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 400;
-                font-size: rem-calc(20);
+                font-size: rem-calc(18);
             }
         }
     }

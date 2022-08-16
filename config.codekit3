@@ -31,6 +31,29 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/index\/heart.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/index\/heart.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/index\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 211064,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/index\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -49,6 +72,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/content\/index-hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index-hero.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -246,6 +277,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_index-hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_index-hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
