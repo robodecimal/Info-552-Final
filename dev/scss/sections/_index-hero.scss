@@ -24,7 +24,7 @@
             padding: 16px;
             margin-top: -16px;
             width: 100%;
-            box-sizing: border-box;2
+            box-sizing: border-box;
 
          
             h1{
@@ -34,6 +34,18 @@
                 @include md{
                     padding-left:20%;
                     padding-right: 20%;
+                    font-size: rem-calc(30);
+                }
+
+                @include lg{
+                    padding-left:30%;
+                    padding-right: 30%;
+                    font-size: rem-calc(40);
+                }
+
+                @include xxl{
+                    padding-left:35%;
+                    padding-right: 35%;
                 }
             }
 
@@ -41,9 +53,22 @@
                 color: var(--white);
                 font-size: rem-calc(18);
                 font-weight: 600;
+                margin-top: 16px;
                 @include md{
                     padding-left:20%;
                     padding-right: 20%;
+                    font-size: rem-calc(25);
+                }
+
+                @include lg{
+                    padding-left:30%;
+                    padding-right: 30%;
+                    font-size: rem-calc(30);
+                }
+
+                @include xxl{
+                    padding-left:35%;
+                    padding-right: 35%;
                 }
             }
         }
