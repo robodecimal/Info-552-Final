@@ -14,10 +14,10 @@ let menuHeight = menu.offsetHeight;
 function displayWindowSize(){
     // check the view port view and see if the menu needs to be moved
     if(document.documentElement.clientWidth <= 1024){
-        console.log("hide");
+        // console.log("hide");
         gsap.set("#nav-container",{y:-menuHeight - 100});
     }else{
-        console.log("un-hide");
+        // console.log("un-hide");
         gsap.set("#nav-container",{y:0});
     }
 }
