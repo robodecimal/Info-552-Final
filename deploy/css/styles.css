@@ -13,6 +13,7 @@ html {
 :root {
   --white: #fff;
   --black: #000;
+  --grey: #E7E7E7;
   --red: #E63946;
   --cream: #F1FAEE;
   --lightBlue: #A8DADC;
@@ -814,4 +815,81 @@ header #burger-container i {
   height: 100%;
   width: 100%;
   display: inline-block;
+}
+
+/* =============
+    Index Outreach
+============= */
+#outreach {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". index-outreach .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #outreach {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #outreach {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #outreach {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#outreach > div {
+  grid-area: index-outreach;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #outreach > div {
+    grid-template-columns: 50% auto;
+  }
+}
+#outreach > div .outreach-card > div {
+  display: flex;
+}
+#outreach > div .outreach-card > div img {
+  margin-right: 16px;
+  width: 50px;
+}
+#outreach > div a:link,
+#outreach > div a:visited {
+  color: var(--red);
+}
+@media (min-width: 768px) {
+  #outreach > div #social-feeds > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+  #outreach > div #social-feeds > div #insta-facebook .insta-card {
+    background-color: var(--grey);
+    padding: 16px;
+  }
+  #outreach > div #social-feeds > div #insta-facebook .insta-card .social-icon {
+    width: 30px;
+  }
+  #outreach > div #social-feeds > div #insta-facebook .insta-card .post-pic {
+    width: 100%;
+  }
+  #outreach > div #social-feeds > div #insta-facebook ul {
+    display: flex;
+  }
+  #outreach > div #social-feeds > div #insta-facebook ul li {
+    margin-top: 16px;
+    margin-right: 24px;
+  }
+  #outreach > div #social-feeds > div #insta-facebook ul li img {
+    width: 20px;
+  }
+  #outreach > div #social-feeds > div #twitter {
+    background-color: var(--grey);
+  }
 }

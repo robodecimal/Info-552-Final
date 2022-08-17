@@ -1,0 +1,97 @@
+/* =============
+    Index Outreach
+============= */
+
+#outreach {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". index-outreach .";
+    padding: 24px 0;
+
+    @include md {
+        padding: 48px 0;
+    }
+
+    @include lg {
+        padding: 56px 0;
+    }
+
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: index-outreach;
+        display: grid;
+        gap: 16px;
+
+        @include md {
+            grid-template-columns: 50% auto;
+        }
+
+
+        .outreach-card {
+            >div {
+                display: flex;
+
+                img {
+                    margin-right: 16px;
+                    width: 50px;
+                }
+            }
+        }
+
+        a:link,
+        a:visited {
+            color: var(--red);
+        }
+
+        #social-feeds {
+            >div {
+                @include md {
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    gap: 16px;
+
+                    #insta-facebook {
+                       
+
+                        
+
+                        .insta-card {
+                            background-color: var(--grey);
+                            padding: 16px;
+
+                            .social-icon{
+                                width: 30px;
+                            }
+
+                            .post-pic {
+                                width: 100%;
+                            }
+                        }
+
+                        ul {
+                            display: flex;
+
+                            li {
+                                margin-top: 16px;
+                                margin-right: 24px;
+
+                                img {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    #twitter{
+                        background-color: var(--grey);
+                    }
+
+                }
+            }
+        }
+    }
+}
